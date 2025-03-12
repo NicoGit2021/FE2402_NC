@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cos de cumparaturi la magazinul Darwin</h2>
+    <form autocomplete="off" action="https://darwin.md">
+        <h3>Informații de contact</h3>
+        <input type="text" placeholder="Prenume*"  name="prenume" required>
+        <br><br>
+        <input type="text" placeholder="Nume de familie*" name="nume_de_familie" required>
+        <br><br>
+        <input type="text" placeholder="Numar de telefon*" name="numar_de_telefon" required>
+        <br><br>
+        <input type="email" placeholder="E-mail*" name="email" required>
+        <br><br>
+        <input type="tel" placeholder="Nr. de telefon*" name="telefon" required> 
+        <br><br>
+        <hr>
+        <h3>Livrare la domiciliu</h3>
+        <label for="zi_livrare">Introdu ziua de livrare:</label>
+        <input id="zi_livrare" type="date" name="zi_livrare"  required>
+        <br><br>
+        <label for="localitate">Alege orasul de livrare.<i>Daca nu il gasesti in lista, scrie-l in campul alaturat.</i>
+        <br><br>
+        </label>
+        <select id="localitate" name="localitate">
+            <option selected>Chisinau</option>
+            <option>Balti</option>
+            <option>Ungheni</option>
+            <option>Criuleni</option>
+            <option>Hincesti</option>
+            <option>Altul</option>
+        </select>
+        <input type="text" placeholder="Oras*" name="oras">
+        <br><br>
+        <input type="text" placeholder="Strada*" name="strada" required>
+        <br><br>
+        <input type="text" placeholder="Nr. casei/ap.*" name="nr_casa" required>
+        <br><br>
+        <hr>
+        <h3>Cantitate marfa</h3>
+        <label for="cantitate">Nr.de unitati</label>
+        <input type="number" id="cantitate" placeholder="Nr. de unitati" name="nr_unitati" min="1" required>
+        <br><br>
+        <hr>
+        <h3>Metoda de achitare</h3>
+        <input type="radio" id="plata_online" name="metoda_de_plata">
+        <label for="plata_online">Plata online</label>
+        <br>
+        <input type="radio" id="credit" name="metoda_de_plata">
+        <label for="credit">In credit</label>
+        <br>
+        <input type="radio" id="transfer" name="metoda_de_plata">
+        <label for="transfer">Transfer bancar</label>
+        <br>
+        <input type="radio" id="numerar" name="metoda_de_plata">
+        <label for="numerar">In numerar</label>
+        <br>
+        <input type="radio" id="card_livrare" name="metoda_de_plata" checked>
+        <label for="card_livrare">Card bancar la livrare</label>
+        <br><br>
+        <input type="checkbox" id="checkbox" name="acord_livrare" required>
+        <label for="checkbox">Am citit și sunt de acord cu condițiile de livrare/achitare și condițiile de returnare/anulare</label>
+        <br><br>
+        <textarea cols="70" rows="3" placeholder="Comentarii despre comanda" name="comentarii"></textarea>
+        <br><br>
+        <button type="submit" value="Submit">Plaseaza comanda</button>
+        <button type="reset" value="Reset">Reseteaza</button>
+
+
+        
+
+
+
+    </form>
+</body>
+</html>
