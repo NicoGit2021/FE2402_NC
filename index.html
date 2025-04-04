@@ -3,62 +3,69 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
         <title>Darwin products for gaming</title>
     </head>
     <body>
-        <h1>Tema pentru acasa (lectia 4)</h1>
-        <a href="video.html"><h2>Videouri</h2></a>
-        <a href="formular.html"><h2>Cosul de cumparaturi</h2></a>
+        <h1>Tema pentru acasa (lectia 9)</h1>
+        <nav id="Nav-bar">
+            <a href="video.html">Videouri</a>
+            <a href="formular.html">Cosul de cumparaturi</a>
+            <a href="#gaming">Gaming</a>
+            <a href="#ceasuri">Ceasuri smart</a>
+        </nav>
+        
         <!-- Lista neordonata -->
-        <h2>Gaming</h2>
-       <ul>
+        <section>
             <h3>Console gaming</h3>
-            <li>
-                <a href="https://darwin.md/gaming/console/sony" target="_blank">
-                    <p><b>Sony Playstation</b> </p>
-                    <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/06/PlayStation-5.jpg?q=70&fit=crop&w=825&dpr=1" width="200" alt="sony console"> 
-                </a>
-            </li>
-            <li>
-                <a href="https://darwin.md/gaming/console/microsoft" target="_blank">
-                    <p><b>Microsoft Xbox</b></p>
-                    <img src="https://xstore.md/images/product/2023/11/Microsoft-Xbox-Series-S,-Black-(1).jpg" width="200" alt="Microsoft Xbox">
-                </a>
+                <ul id="gaming">
                 
-            </li>
-            <li>
-                <a href="https://darwin.md/gaming/console/nintendo" target="_blank">
-                    <p><b>Nintendo</b></p>
-                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/en_US/products/hardware/nintendo-switch-red-blue/110478-nintendo-switch-neon-blue-neon-red-front-screen-on-1200x675" width="200" alt="Nintendo">
-
-                </a>
-            </li>
-       </ul>
+                    <li>
+                        <a  href="https://darwin.md/gaming/console/sony" target="_blank">
+                            <p class="product-item">Sony Playstation</p>
+                            <div class="image-container"><img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/06/PlayStation-5.jpg?q=70&fit=crop&w=825&dpr=1" alt="sony console"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="https://darwin.md/gaming/console/microsoft" target="_blank">
+                        <p class="product-item">Microsoft Xbox</p>
+                        <div class="image-container"><img src="https://xstore.md/images/product/2023/11/Microsoft-Xbox-Series-S,-Black-(1).jpg" alt="Microsoft Xbox"></div>
+                        </a>
+                
+                    </li>
+                    <li>
+                        <a href="https://darwin.md/gaming/console/nintendo" target="_blank">
+                        <p class="product-item" >Nintendo</p>
+                        <div class="image-container"><img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/en_US/products/hardware/nintendo-switch-red-blue/110478-nintendo-switch-neon-blue-neon-red-front-screen-on-1200x675" alt="Nintendo"></div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
 
 
        <!-- Lista ordonata -->
-        <h2>Ceasuri/Bratari Smart</h2>
-        <ol type="i">
+        <section >
             <h3>Ceasuri inteligente</h3>
-            <li>
-                <a href="https://darwin.md/gadgets/ceasuri-inteligente/apple-watch-series-10" target="_blank">
-                    <p><i>Apple Watch Series 10</i></p>
-                    <img src="img/ceas Apple 10.jpg" alt="Apple Watch Series 10 Rose Gold" width="200">
-                </a>
-            </li>
-            <li>
-                <a href="https://darwin.md/gadgets/ceasuri-inteligente/cu-nfc" target="_blank">
-                    <p><i>Ceasuri cu NFC</i></p>
-                    <img src="img/Ceas NFC.jpg" alt="ceas cu NFC" width="200">
-                </a>
-            </li>
-            <li>
-                <a href="https://darwin.md/gadgets/ceasuri-inteligente/cu-pulsoximetru-spo2" target="_blank">
-                    <p><i>Ceasuri cu pulsoximetru</i></p>
-                    <img  src="img/ceas pulsoximetru.jpg" width="200" alt="ceas cu pulsoximetru">
-                </a>
-            </li>
-        </ol>
-
+            <ol id="ceasuri">
+                 <li>
+                    <a href="https://darwin.md/gadgets/ceasuri-inteligente/apple-watch-series-10" target="_blank">
+                    <p class="product-item">Apple Watch Series 10</p>
+                    <div class="image-container"><img src="img/ceas Apple 10.jpg" alt="Apple Watch Series 10 Rose Gold"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://darwin.md/gadgets/ceasuri-inteligente/cu-nfc" target="_blank">
+                    <p class="product-item">Ceasuri cu NFC</p>
+                    <div class="image-container"><img src="img/Ceas NFC.jpg" alt="ceas cu NFC"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://darwin.md/gadgets/ceasuri-inteligente/cu-pulsoximetru-spo2" target="_blank">
+                    <p class="product-item">Ceasuri cu pulsoximetru</p>
+                    <div class="image-container"><img  src="img/ceas pulsoximetru.jpg" alt="ceas cu pulsoximetru"></div>
+                    </a>
+                </li>
+             </ol>
+        </section>
     </body>
 </html>
